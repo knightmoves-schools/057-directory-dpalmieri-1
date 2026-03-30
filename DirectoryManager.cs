@@ -7,6 +7,6 @@ public class DirectoryManager{
     public void Create(string directoryName){
         // Add your code here
         string classic = Path.GetTempPath() + directoryName;
-        Directory.CreateDirectory(classic);
+        Directory.CreateDirectory(classic + "/test-directory");
     }
 }
