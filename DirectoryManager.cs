@@ -9,7 +9,5 @@ public class DirectoryManager{
         string classic = Path.GetTempPath() + directoryName;
         Directory.CreateDirectory(classic + "/test-directory");
         File.WriteAllText(classic + "/test-directory/test-file.txt", "This is a test file.");
-        
-        return Directory.Exists(classic + "/test-directory");
     }
 }
